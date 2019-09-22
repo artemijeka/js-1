@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+	font-family: Roboto;
+}
+
+#chess-board {
+  width: 500px;
+  height: 500px;
+  background-color: #593333;
+  margin-left: 25px;
+}
+
+td {
+  width: 25px;
+  height: 25px;
+}
+
+tr {
+  width: 25px;
+  height: 25px;
+}
+
+.cell-white {
+  background-color: #F4D7B7;
+}
+
+.row-number {
+  position: relative;
+  right: 25px;
+}
+
+.col-letter {
+  position: relative;
+  top: 50px;
+  left: 15px;
+}
+
+
+/*Добавление изображений фиугур*/
+
+tr:nth-child(1) td,
+tr:nth-child(2) td,
+tr:nth-child(7) td,
+tr:nth-child(8) td {
+  background-image: url('Chess_Pieces_Sprite.png');
+  background-size: 550%;
+  background-repeat: no-repeat;
+}
+
+
+/*колесницы черные*/
+
+tr:first-child td:first-child,
+tr:first-child td:nth-child(8) {
+  background-position: 80% 110%;
+}
+
+
+/*кони черные*/
+
+tr:first-child td:nth-child(2),
+tr:first-child td:nth-child(7) {
+  background-position: 60% 110%;
+}
+
+
+/*слоны черные*/
+
+tr:first-child td:nth-child(3),
+tr:first-child td:nth-child(6) {
+  background-position: 40% 110%;
+}
+
+
+/*ферзь черные*/
+
+tr:first-child td:nth-child(4) {
+  background-position: 20% 110%;
+}
+
+
+/*царь черные*/
+
+tr:first-child td:nth-child(5) {
+  background-position: -1% 110%;
+}
+
+
+/*пешки черные*/
+
+tr:nth-child(2) td {
+  background-position: 100% 110%;
+}
+
+
+/*колесницы белые*/
+
+tr:last-child td:first-child,
+tr:last-child td:nth-child(8) {
+  background-position: 80% 0%;
+}
+
+
+/*кони белые*/
+
+tr:last-child td:nth-child(2),
+tr:last-child td:nth-child(7) {
+  background-position: 60% 0%;
+}
+
+
+/*слоны белые*/
+
+tr:last-child td:nth-child(3),
+tr:last-child td:nth-child(6) {
+  background-position: 40% 0%;
+}
+
+
+/*ферзь белый*/
+
+tr:last-child td:nth-child(4) {
+  background-position: 20% 0%;
+}
+
+
+/*царь белый*/
+
+tr:last-child td:nth-child(5) {
+  background-position: -1% 0%;
+}
+
+
+/*пешки белые*/
+
+tr:nth-child(7) td {
+  background-position: 100% 0%;
+}

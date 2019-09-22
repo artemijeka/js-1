@@ -1,0 +1,133 @@
+.table-theme {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  border-collapse: collapse;
+  margin: 25px;
+}
+
+
+/*параметры ячеек*/
+
+td {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+}
+
+
+/*отрисовка нечетных столбцов в нечетных строках*/
+
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #F7DABC;
+}
+
+
+/*отрисовка четных столбцов в нечетных строках*/
+
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: #B66434;
+}
+
+
+/*отрисовка четных столбцов в четных строках*/
+
+tr:nth-child(even) td:nth-child(even) {
+  background-color: #F7DABC;
+}
+
+
+/*отрисовка четных столбцов в нечетных строках*/
+
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: #B66434;
+}
+
+
+/*свойства левых ячеек span для сдвига*/
+
+tr > td:nth-child(1) > span:before {
+  position: relative;
+  right: 25px;
+}
+
+
+/*свойства левых ячеек span для нумирации*/
+
+tr:nth-child(8) td:nth-child(1) span:before {
+  content: "1";
+}
+
+tr:nth-child(7) td:nth-child(1) span:before {
+  content: "2";
+}
+
+tr:nth-child(6) td:nth-child(1) span:before {
+  content: "3";
+}
+
+tr:nth-child(5) td:nth-child(1) span:before {
+  content: "4";
+}
+
+tr:nth-child(4) td:nth-child(1) span:before {
+  content: "5";
+}
+
+tr:nth-child(3) td:nth-child(1) span:before {
+  content: "6";
+}
+
+tr:nth-child(2) td:nth-child(1) span:before {
+  content: "7";
+}
+
+tr:nth-child(1) td:nth-child(1) span:before {
+  content: "8";
+}
+
+
+/*свойства нижних ячеек span для сдвига*/
+
+tr > td > span:after {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+
+/*свойства нижних ячеек span для обозначения буквами*/
+
+tr:nth-child(8) td:nth-child(1) span:after {
+  content: "A";
+}
+
+tr:nth-child(8) td:nth-child(2) span:after {
+  content: "B";
+}
+
+tr:nth-child(8) td:nth-child(3) span:after {
+  content: "C";
+}
+
+tr:nth-child(8) td:nth-child(4) span:after {
+  content: "D";
+}
+
+tr:nth-child(8) td:nth-child(5) span:after {
+  content: "E";
+}
+
+tr:nth-child(8) td:nth-child(6) span:after {
+  content: "F";
+}
+
+tr:nth-child(8) td:nth-child(7) span:after {
+  content: "G";
+}
+
+tr:nth-child(8) td:nth-child(8) span:after {
+  content: "H";
+}
+
+
