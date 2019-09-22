@@ -1,0 +1,7 @@
+.gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery__img-small {
+    /* fallback */
+    background: transparent url(../img/gallery/01-300x300.jpg) no-repeat 0 0; }

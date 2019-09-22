@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Свойство width определяет виртуальную ширину окна просмотра, значение device-width — физическую ширину устройства,
+    initial-scale управляет начальным уровнем масштабирования, initial-scale=1 означает, что 1 пиксель окна просмотра = 1 пиксель CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Если IE то включить скрипт для поддержки html5 тегов. -->
+  <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+  <div class="gallery">
+    <img src="./img/gallery/00-300x300.jpg" alt="" class="gallery__img-small">
+    <img src="./img/gallery/01-300x300.jpg" alt="" class="gallery__img-small">
+    <img src="./img/gallery/02-300x300.jpg" alt="" class="gallery__img-small">
+    <span class="gallery__arrow gallery__arrow-prev" id="arrowPrev" data-src=""></span>
+    <img src="./img/gallery/no-img.png" class="gallery__img-big" id="imgBig" onerror="showNoImg()"></img>
+    <span class="gallery__arrow gallery__arrow-next" id="arrowNext" data-src=""></span>
+    <!-- /.gallery__img-big -->
+  </div>
+  <!-- /.gallery -->
+
+  <script src="js/script.min.js" defer></script>
+
+</body>
+
+</html>
